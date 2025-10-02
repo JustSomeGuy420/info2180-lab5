@@ -1,1 +1,52 @@
 /* Add your own styles */
+header{
+    text-align: center;
+    background-color: lightblue;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main{
+    text-align: center;
+    margin: 20px;
+}
+
+#controls{
+    margin-bottom: 20px;
+}
+
+#result{
+    margin-top: 20px;
+}
+
+#country{
+    padding: 5px;
+    font-size: 14px;
+    width: 200px;
+}
+
+#lookup, #lookupCities{
+    margin-left: 10px;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#lookup{
+    background-color: lightgreen;
+}
+
+#lookupCities{
+    background-color: lightcoral;
+}
+
+#lookup:hover{
+    background-color: green;
+    color: white;
+}
+
+#lookupCities:hover{
+    background-color: red;
+    color: white;
+}

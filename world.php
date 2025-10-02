@@ -16,7 +16,7 @@ $conn = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4", $username, $p
   <?php $stmt = $conn->query("SELECT * FROM countries WHERE name LIKE '%$country%'"); ?>
   <?php $results = $stmt->fetchAll(PDO::FETCH_ASSOC); ?>
 
-  <table>
+  <table class="table table-striped">
     <tr>
       <th>Name</th>
       <th>Continent</th>
@@ -35,7 +35,7 @@ $conn = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4", $username, $p
 <?php elseif ($lookup === 'cities'): ?>
   <?php $stmt = $conn->query("SELECT * FROM cities WHERE country_code IN (SELECT code FROM countries WHERE name = '$country')"); ?>
   <?php $results = $stmt->fetchAll(PDO::FETCH_ASSOC); ?>
-  <table>
+  <table class="table table-striped">
     <tr>
       <th>Name</th>
       <th>District</th>
